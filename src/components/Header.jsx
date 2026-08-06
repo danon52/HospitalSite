@@ -3,11 +3,10 @@ import { Link } from "react-router";
 export default function Header() {
     return (
         <div className="flex justify-center">
-            <header className="mt-7 text-center  bg-amber-200 w-300 h-25 rounded-4xl  ">
+            {/* <header className="mt-7 text-center  bg-gray-200 w-300 h-25 rounded-4xl  ">
                 <div className="flex justify-between px-20  py-8 ">
-                    {/*ссылки*/}
                     <Link to='/'>
-                        <p className="text-2xl">
+                        <p className="text-2xl ">
                             О нас
                         </p>
                     </Link>
@@ -36,10 +35,13 @@ export default function Header() {
                     <Link to='/'>
                         <p className="text-2xl">Блог</p>
                     </Link>
-
                 </div>
+            </header > */}
 
-            </header >
+
+
+
+
         </div >
     )
 }
