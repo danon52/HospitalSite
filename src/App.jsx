@@ -129,7 +129,7 @@ export default function App() {
 
         <div className="mt-5 w-100 h-auto rounded-xl bg-[#fbe0d4] border border-[#f7773c]">
 
-          {/* поменять услуги  */}
+
           <div className="px-4 py-5">
             <div className="flex">
               <p className="text-2xl">Стандартная  капельница</p>
@@ -160,12 +160,13 @@ export default function App() {
         </div>
         <div className="mt-5 w-100 h-auto rounded-xl bg-[#F5F1EB]">
 
-          {/* поменять услуги  */}
+
           <div className="px-4 py-5">
             <p className="text-2xl">VIP капельница</p>
-            <p>Максимальный уход </p>
-            <div>
-              <p className="text-[#5F7178]">Все из стандартной</p>
+            <p className="text-gray-400">Максимальный уход </p>
+            <div className="mt-5  flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-[#2cb779]"></div>
+              <span> Все из стандартной </span>
             </div>
             <div className="mt-5  flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-[#2cb779]"></div>
@@ -179,11 +180,76 @@ export default function App() {
               <div className="w-2 h-2 rounded-full bg-[#2cb779] flex"></div>
               <span className="">Мотивация на лечение  </span>
             </div>
-
             <div className=" flex justify-center py-5">
               <button className="bg-[#1cd581] text-white w-[250px] h-[50px] rounded-xl">Вызывать бригаду </button>
             </div>
 
+          </div>
+        </div>
+      </div>
+
+      {/* оживить все три кнопки  */}
+
+      <div className="mt-10">
+        <div className="flex justify-center ">
+          <img className="w-[400px]" src="/doctor.jpg" alt="" />
+        </div>
+        <div className="ml-4">
+          <div>
+            <p className="text-2xl text-[#f37236]">Бесплатная Консультация</p>
+          </div>
+          <div>
+            <p className="text-gray-600 text-xl font-bold">Мотивируем на лечение , помогаем родственникам</p>
+            <div className="py-2 ">
+              <p className="text-xl">Оставьте заявку - поможем разобраться ,<br /> с чего начать путь к выздоровлению </p>
+            </div>
+          </div>
+
+          <form action="">
+            <div>
+              <div>
+                {/* рабочие  поля  */}
+                <p className="text-xl px-4">Имя</p>
+                <div className="px-3 py-1">
+                  <input className="bg-gray-200 py-1 w-full h-[45px] rounded-2xl px-2 " placeholder='Ваше имя ' type="text" />
+                </div>
+              </div>
+              <div className="py-4">
+                <p className="text-xl px-3">
+                  Телефон
+                </p>
+                <div className="px-3 py-1">
+                  <input className="bg-gray-200 w-full h-[45px] rounded-2xl px-4 " placeholder="+7 xxx-xxx-xx-xx " type="number" />
+                </div>
+              </div>
+            </div>
+          </form>
+          <div >
+            {/* сделать рабочую капчу  */}
+
+
+
+
+            <div className="flex justify-center py-4">
+              <div className="w-[250px] h-30 bg-gray-200 rounded-2xl  ">
+                <div className="flex justify-center mt-10">
+                  <input className="w-10 h-10 bg-white border" type="checkbox" />
+                  <p className="px-5  text-2xl">Я не робот </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              {/*   политика конфидециальность (я в шоке ) */}
+              <div className="py-3 flex ">
+                <p className="text-xs">Нажимая кнопку , вы соглашаетесь с  </p>
+                <p className="text-blue-600 text-xs line-clamp-2"> политикой конфидециальности</p>
+              </div>
+
+            </div>
+            <div className="flex justify-center">
+              {/* рабочая кнопка с модалкой  */}
+              <button className="w-[350px]  h-13  rounded-2xl text-white bg-[#1cd581]">Получить консультацию </button>
+            </div>
           </div>
         </div>
       </div>
