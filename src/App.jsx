@@ -56,7 +56,7 @@ export default function App() {
       </div>
 
       <div className="flex justify-center py-4 ">
-        <button className="w-100 bg-[#5B9279]  text-white h-10 rounded-4xl text-xl cursor-pointer">
+        <button className="w-100 bg-[#1cd581]   text-white h-10 rounded-4xl text-xl cursor-pointer">
           Вызвать врача на дом
         </button>
       </div>
@@ -86,7 +86,7 @@ export default function App() {
 
       </div>
       <div className="flex justify-center mt-5">
-        <button className="bg-[#D97B4F] rounded-3xl cursor-pointer  w-100 h-13 text-xl text-white">Узнать стоимость для вашего случая </button>
+        <button className="bg-[#f7773c] rounded-3xl cursor-pointer  w-100 h-13 text-xl text-white">Узнать стоимость для вашего случая </button>
       </div>
 
 
@@ -98,35 +98,94 @@ export default function App() {
         <div className="mt-5 w-100 h-auto rounded-xl bg-[#F5F1EB]">
 
 
-          <div className="px-4">
+          <div className="px-4 py-5">
             <p className="text-2xl">Базовая капельница</p>
             <div>
               <p className="text-[#5F7178]">Быстрое очищение</p>
             </div>
-
-
-            <div className="mt-5  ">
+            <div className="mt-5  flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-[#2cb779]"></div>
-
+              <span> Водный баланс </span>
+            </div>
+            <div className="py-6 flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-[#2cb779]"></div>
+              <span> Успокительные + противорвотные </span>
+            </div>
+            <div className="flex items-center gap-2 w-auto">
+              <div className="w-2 h-2 rounded-full bg-[#2cb779] flex"></div>
+              <span className="">Консультация нарколога  </span>
             </div>
 
-            <div className="py-6">
-              <div className="w-2 h-2 rounded-full bg-[#2cb779]"></div>
-            </div>
-
-            <div className="flex ">
-              <div className="w-2 h-2 rounded-full bg-[#2cb779]"></div>
-              <p className="ml-3">dafa</p>
-            </div>
-
-            <div className="py-6 flex">
+            <div className="mt-6 flex items-center gap-2">
               <div className="w-2 h-2 rounded-full  bg-[#2cb779]"></div>
+              <span>Очищяющая капельница</span>
             </div>
+          </div>
 
+          <div className=" flex justify-center py-5">
+            <button className="bg-[#1cd581] text-white w-[250px] h-[50px] rounded-xl">Вызывать бригаду </button>
+          </div>
+        </div>
+
+        <div className="mt-5 w-100 h-auto rounded-xl bg-[#fbe0d4] border border-[#f7773c]">
+
+          {/* поменять услуги  */}
+          <div className="px-4 py-5">
+            <div className="flex">
+              <p className="text-2xl">Стандартная  капельница</p>
+              <img className="w-6 ml-3 py-1" src="/Star1.svg" alt="" />
+            </div>
+            <div>
+              <p className="text-[#5F7178]">Все из базовой</p>
+            </div>
+            <div className="mt-5  flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-[#2cb779]"></div>
+              <span> Витамины , электролиты</span>
+            </div>
+            <div className="py-6 flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-[#2cb779]"></div>
+              <span> Таблетки на 2 дня </span>
+            </div>
+            <div className="flex items-center gap-2 w-auto">
+              <div className="w-2 h-2 rounded-full bg-[#2cb779] flex"></div>
+              <span className="">Мотивация на лечение    </span>
+            </div>
+            <p className="text-2xl font-bold text-[#f76d2d]">6 500₽ </p>
+            <p className=" line-through text-gray-400 ">7 500 ₽</p>
+          </div>
+          <div className=" flex justify-center py-5">
+            <button className="bg-[#f76d2d] text-white w-[250px] h-[50px] rounded-xl">Вызывать бригаду </button>
           </div>
 
         </div>
+        <div className="mt-5 w-100 h-auto rounded-xl bg-[#F5F1EB]">
 
+          {/* поменять услуги  */}
+          <div className="px-4 py-5">
+            <p className="text-2xl">VIP капельница</p>
+            <p>Максимальный уход </p>
+            <div>
+              <p className="text-[#5F7178]">Все из стандартной</p>
+            </div>
+            <div className="mt-5  flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-[#2cb779]"></div>
+              <span>Ноотропные + гепатопротекторы  </span>
+            </div>
+            <div className="py-6 flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-[#2cb779]"></div>
+              <span> Таблетки на 3 дня </span>
+            </div>
+            <div className="flex items-center gap-2 w-auto">
+              <div className="w-2 h-2 rounded-full bg-[#2cb779] flex"></div>
+              <span className="">Мотивация на лечение  </span>
+            </div>
+
+            <div className=" flex justify-center py-5">
+              <button className="bg-[#1cd581] text-white w-[250px] h-[50px] rounded-xl">Вызывать бригаду </button>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
   )
