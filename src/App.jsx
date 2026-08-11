@@ -128,8 +128,6 @@ export default function App() {
         </div>
 
         <div className="mt-5 w-100 h-auto rounded-xl bg-[#fbe0d4] border border-[#f7773c]">
-
-
           <div className="px-4 py-5">
             <div className="flex">
               <p className="text-2xl">Стандартная  капельница</p>
@@ -187,9 +185,7 @@ export default function App() {
           </div>
         </div>
       </div>
-
       {/* оживить все три кнопки  */}
-
       <div className="mt-10">
         <div className="flex justify-center ">
           <img className="w-[400px]" src="/doctor.jpg" alt="" />
@@ -253,6 +249,47 @@ export default function App() {
           </div>
         </div>
       </div>
+
+      <div className="mt-3">
+        <div>
+          {/*картинка*/}
+          <img src="" alt="" />
+        </div>
+        <div className="w-25 border-blue-200 h-7 rounded-3xl bg-blue-100 ml-13" >
+          <p className="px-2 text-blue-800">Анонимно</p>
+        </div>
+        <div>
+          <p className="font-bold text-xl px-4">Подпишись на наш канал - <br /> здесь помогают делом , а не просто словами  </p>
+        </div>
+        <div className="w-[430px] py-5 px-4">
+          <p className="">Закрытый канал клиники: только проверенные методы лечения и <br /> честные ответы на вопросы.
+            Подписка абсолютно анонимна — никто не узнает, что вы ищете помощь.</p>
+        </div>
+        <div>
+          <div className="px-4">
+            <div className="flex ">
+              <span class="tg-cta__dot">✓</span>
+              <p className="px-3">Прямая связь с дежурными наркологами </p>
+            </div>
+            <div className="flex py-3 ">
+              <span class="tg-cta__dot">✓</span>
+              <p className="px-3">Пошаговый план действий при срывах  </p>
+            </div>
+            <div className="flex ">
+              <span class="tg-cta__dot">✓</span>
+              <p className="px-3">Анонимный чат поддержки  </p>
+            </div>
+          </div>
+          <p className="px-4 py-2">Ваша подписка конфидециальна. Мы не видим ваш номер телефона</p>
+          <div className="flex justify-center py-3">
+            <button className="flex  w-70 rounded-3xl bg-[#1cd581]">
+              <img className="w-7  ml-10" src="/Tg.svg" alt="" />
+              <p className="py-3 px-3 text-white"> Подписаться на канал</p>
+            </button>
+          </div>
+        </div>
+      </div>
+
     </div>
   )
 }

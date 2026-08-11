@@ -25,7 +25,6 @@ export default function Header() {
                             О клинике
                         </p>
                     </Link>
-
                     <Link to='/'>
                         <p className="text-2xl">Отзывы </p>
                     </Link>

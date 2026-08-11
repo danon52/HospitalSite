@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+.tg-cta__dot{
+  flex: 0 0 auto;
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 12px;
+    color: #ffffff;
+    background: #093AFA;
+    box-shadow: 0 10px 22px rgba(9, 58, 250, .18);
+    margin-top: 1px;
+}
+
+  
