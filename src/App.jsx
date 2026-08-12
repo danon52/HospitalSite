@@ -287,8 +287,25 @@ export default function App() {
               <p className="py-3 px-3 text-white"> Подписаться на канал</p>
             </button>
           </div>
+          <div className="text-center">
+            <p className="text-xs py-3"> Наш Telegram  - это скорая помощь в вашем телефоне </p>
+          </div>
         </div>
       </div>
+
+
+
+      {/* сделать слайдер  */}
+
+      <img alt="image-content" src="https://medeos-rostov.ru/netcat_files/multifile/474/1/preview_1.webp"></img>
+      {/* ______________________ */}
+      <img alt="image-content" src="https://medeos-rostov.ru/netcat_files/multifile/474/2/preview_1.webp"></img>
+      {/* ______________________Я */}
+      <img alt="image-content" src="/netcat_files/multifile/474/3/preview_1.webp"></img>
+      {/* добавить политику  */}
+
+
+
 
     </div>
   )
