@@ -6,14 +6,11 @@ export default function App() {
       <div>
         <Header />
       </div>
-
-
-
       <div className="absolute">
-        <img src="/host.jpg" alt="" />
+        <img className="block lg: hidden" src="/host.jpg" alt="" />
       </div>
-      <div className="relative h-130 flex flex-col justify-end py-6 px-4 ">
-        <div className="w-80 h-7 flex bg-gray-200 rounded-4xl ">
+      <div className="block relative h-130 flex flex-col justify-end py-6 px-4 lg:hidden ">
+        <div className="  w-80 h-7 flex bg-gray-200 rounded-4xl ">
           <div className="py-[10px] ml-4">
             <div className="w-2 rounded-full bg-green-400 h-2 "></div>
           </div>
@@ -27,6 +24,23 @@ export default function App() {
             </p>
           </div>
         </div>
+      </div>
+      <div className="lg:absolute">
+        <img className="hidden lg:block w-[80rem] h-[50rem]" src="/525_1.jpg" alt="" />
+      </div>
+
+      <div className="lg:relative mt-40 px-10">
+        <div>
+          <div className="lg: w-60 h-8   px-2 rounded-3xl bg-gray-200">
+            <div className="lg: flex " >
+              <div className="py-3">
+                <div className="lg: w-2 h-2  rounded-full bg-green-500" ></div>
+              </div>
+              <p className="lg: py-2 text-xs px-2">Работаем 24/7 · Ростов-на-Дону</p>
+            </div>
+          </div>
+        </div>
+
       </div>
 
 
@@ -303,8 +317,6 @@ export default function App() {
       {/* ______________________Я */}
       <img alt="image-content" src="/netcat_files/multifile/474/3/preview_1.webp"></img>
       {/* добавить политику  */}
-
-
 
 
     </div>
