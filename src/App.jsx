@@ -1,10 +1,12 @@
 import Header from "./components/Header";
+import HeaderPC from "./components/HeaderPC";
 
 export default function App() {
   return (
     <div>
+
       <div>
-        <Header />
+        <HeaderPC />
       </div>
       <div className="absolute">
         <img className="block lg: hidden" src="/host.jpg" alt="" />
@@ -25,24 +27,53 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className="lg:absolute">
-        <img className="hidden lg:block w-[80rem] h-[50rem]" src="/525_1.jpg" alt="" />
+      <div className="lg:absolute shadow ">
+        <img className="hidden lg:block w-[80rem] h-[50rem] " src="/525_1.jpg" alt="" />
       </div>
 
-      <div className="lg:relative mt-40 px-10">
-        <div>
-          <div className="lg: w-60 h-8   px-2 rounded-3xl bg-gray-200">
-            <div className="lg: flex " >
-              <div className="py-3">
-                <div className="lg: w-2 h-2  rounded-full bg-green-500" ></div>
+
+
+      <section className="hidden lg:block">
+        <div className="lg: relative mt-40 px-10">
+          <div>
+            <div className="lg: w-60 h-8   px-2 rounded-3xl bg-gray-200">
+              <div className="lg: flex " >
+                <div className="py-3">
+                  <div className="lg: w-2 h-2  rounded-full bg-green-500" ></div>
+                </div>
+                <p className="lg: py-2 text-xs px-2">Работаем 24/7 · Ростов-на-Дону</p>
               </div>
-              <p className="lg: py-2 text-xs px-2">Работаем 24/7 · Ростов-на-Дону</p>
+            </div>
+          </div>
+
+          <div>
+            <p className=" lg: text-xl py-4">Наркологическая клиника в Ростове-на-Дону </p>
+          </div>
+          <div>
+            <p className="lg: text-5xl text-[#ff5029]">Выезд нарколога - <br /> через 30 минут <br /> у вас дома </p>
+          </div>
+          <div className=" lg: py-5">
+            <p className="lg: ">Срочный выезд бригады в любой район города. </p>
+            <p className="lg: py-1 ">Анонимно ,без постановки на учет. </p>
+            <p className="lg: ">Облегение через 15 минут после капельницы. </p>
+          </div>
+          <div>
+            <div className=" lg:w-80 h-20 bg-gray-200 rounded-3xl">
+              <div className=" lg: flex px-3 py-2">
+                {/* фото плиз  */}
+                <div>
+                  <p>От 3 500 ₽</p>
+                  <div>
+                    <p>Вывод из запоя на дому</p>
+                    <p>Договор и чеки - обязательно </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-      </div>
-
+      </section>
 
       <div>
         <p className="text-2xl text-[#222a2e]">
