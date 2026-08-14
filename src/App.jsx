@@ -1,10 +1,11 @@
+
 import Header from "./components/Header";
 import HeaderPC from "./components/HeaderPC";
 
 export default function App() {
   return (
     <div className="px-50">
-      <div className="hidden lg:block">
+      <div className="hidden lg:block h-20 sticky top-0 z-50 w-full bg-white">
         <HeaderPC />
       </div>
       <div className="absolute">
@@ -37,30 +38,30 @@ export default function App() {
       <section className="hidden lg:block">
         <div className="lg:relative mt-40 px-10">
           <div>
-            <div className="lg: w-60 h-8   px-2 rounded-3xl bg-gray-200">
-              <div className="lg: flex " >
+            <div className="lg:w-60 h-8   px-2 rounded-3xl bg-gray-200">
+              <div className="lg:flex " >
                 <div className="py-3">
-                  <div className="lg: w-2 h-2  rounded-full bg-green-500" ></div>
+                  <div className="lg:w-2 h-2  rounded-full bg-green-500" ></div>
                 </div>
-                <p className="lg: py-2 text-xs px-2">Работаем 24/7 · Ростов-на-Дону</p>
+                <p className="lg:py-2 text-xs px-2">Работаем 24/7 · Ростов-на-Дону</p>
               </div>
             </div>
           </div>
 
           <div>
-            <p className=" lg: text-xl py-4">Наркологическая клиника в Ростове-на-Дону </p>
+            <p className=" lg:text-xl py-4">Наркологическая клиника в Ростове-на-Дону </p>
           </div>
           <div>
-            <p className="lg: text-5xl text-[#ff5029]">Выезд нарколога - <br /> через 30 минут <br /> у вас дома </p>
+            <p className="lg:text-5xl text-[#ff5029]">Выезд нарколога - <br /> через 30 минут <br /> у вас дома </p>
           </div>
-          <div className=" lg: py-5">
+          <div className="lg:py-5">
             <p className="lg: ">Срочный выезд бригады в любой район города. </p>
-            <p className="lg: py-1 ">Анонимно ,без постановки на учет. </p>
-            <p className="lg: ">Облегение через 15 минут после капельницы. </p>
+            <p className="lg:py-1 ">Анонимно ,без постановки на учет. </p>
+            <p className="lg:">Облегение через 15 минут после капельницы. </p>
           </div>
           <div>
             <div className=" lg:w-80 h-20 bg-gray-200 rounded-3xl">
-              <div className=" lg: flex px-3 py-2">
+              <div className=" lg:flex px-3 py-2">
                 {/* фото плиз  */}
                 <div>
                   <p>От 3 500 ₽</p>
@@ -118,7 +119,7 @@ export default function App() {
           <button className="lg:rounded-2xl w-100 h-20 bg-[#1cd581] cursor-pointer  text-white">Узнать стоимость вашего случая </button>
         </div>
       </section>
-
+      {/* для пк  */}
       <section className="hidden lg:block">
         <div className=" lg:grid grid-cols-3 gap-5">
           <div className="lg:px-5 py-5 bg-[#EAF0FE] border-[#C7D7FC]  rounded-3xl ">
@@ -144,7 +145,7 @@ export default function App() {
               <span>Очищяющая капельница</span>
             </div>
             <div className="lg:flex justify-center py-3">
-              <button className="lg: cursor-pointer rounded-3xl w-75 h-12 bg-[#3B70F5]"> Вызвать бригаду</button>
+              <button className="lg: cursor-pointer text-white rounded-3xl w-75 h-12 bg-[#3B70F5]"> Вызвать бригаду</button>
             </div>
           </div>
 
@@ -178,7 +179,7 @@ export default function App() {
             </div>
             {/*   так же поменять цвет под основной  */}
             <div className="lg:flex justify-center py-3">
-              <button className="lg:cursor-pointer rounded-3xl w-75 h-12 bg-[#3B70F5]"> Вызвать бригаду</button>
+              <button className="lg:cursor-pointer text-white rounded-3xl w-75 h-12 bg-[#3B70F5]"> Вызвать бригаду</button>
             </div>
           </div>
           <div className="lg:px-4 py-5 bg-[#EAF0FE] rounded-3xl">
@@ -203,21 +204,49 @@ export default function App() {
               <span className="lg:">Мотивация на лечение   </span>
             </div>
             <div className="lg:flex justify-center py-3">
-              <button className="lg:cursor-pointer rounded-3xl w-75 h-12 bg-[#3B70F5]"> Вызвать бригаду</button>
+              <button className="lg:cursor-pointer text-white rounded-3xl w-75 h-12 bg-[#3B70F5]"> Вызвать бригаду</button>
             </div>
           </div>
         </div>
       </section>
 
-
-      <section className="hidden lg:block">
-        <div>
-
+      {/* для пк */}
+      <section className="hidden lg:block mt-10">
+        <div className="lg:grid grid-cols-2 gap-4">
+          <div>
+            {/* картинка под замену  */}
+            <img className="lg: w-150 rounded-4xl" src="/413_66.jpg" alt="" />
+          </div>
+          <div>
+            <p className="lg: text-xs  text-[#f0892e]">
+              Бесплатная консультация
+            </p>
+            <div>
+              <p className="lg: text-3xl mt-5  "> Мотивируем на лечение , <br /> помогаем родственникам </p>
+            </div>
+            <div>
+              <p className="lg: py-7">Оставьте заявку - поможем разобраться , <br /> с чего начать путь к выздоровлению. </p>
+            </div>
+            {/* форма */}
+            <form action="">
+              <div className="lg: flex ">
+                <div>
+                  <input className="lg:w-70 px-3 bg-gray-100 rounded-2xl h-10 " placeholder="Ваше имя " type="text" />
+                </div>
+                <div className="ml-5">
+                  <input className="lg:w-60 px-3 bg-gray-100 rounded-2xl h-10 " placeholder="+7 xxx-xxx-xx-xx  " type="number" />
+                  {/* каптча */}
+                </div>
+              </div>
+              <div className="lg: px-20 py-10">
+                <button className="lg:  h-15 rounded-3xl text-white bg-[#3B70F5] w-100">Получить консультацию </button>
+              </div>
+            </form>
+          </div>
         </div>
 
 
       </section>
-
       <section className="block lg:hidden">
         <div>
           <p className="text-2xl text-[#222a2e]">
@@ -244,7 +273,7 @@ export default function App() {
           </div>
         </div>
       </section>
-
+      {/* для мобилки  */}
       <section className="block lg:hidden">
         <div className="flex justify-center py-4 ">
           <button className="w-100 bg-[#1cd581]   text-white h-10 rounded-4xl text-xl cursor-pointer">
@@ -252,7 +281,7 @@ export default function App() {
           </button>
         </div>
       </section>
-
+      {/* для мобилки */}
       <section className="block lg:hidden">
         <p className="text-2xl px-4">Почему выбирают нас ? </p>
         <div className="grid grid-cols-2 gap-2 mt-4 px-2">
@@ -276,21 +305,22 @@ export default function App() {
             <p> Эффективность </p>
             <p>Современные препараты и полное очищение </p>
           </div>
-
         </div>
       </section>
-
       <section className="block lg:hidden">
         <div className="flex justify-center mt-5">
           <button className="bg-[#f7773c] rounded-3xl cursor-pointer  w-100 h-13 text-xl text-white">Узнать стоимость для вашего случая </button>
         </div>
       </section>
 
-
-      <div className="block lg:hidden">
-        <p className="text-[#E08E5B] mt-10">Выберите капельницу </p>
-        <p className="text-4xl">Вывод из запоя на дому  </p>
-      </div>
+      {/* для мобилки  */}
+      <section className="block lg:hidden">
+        <div className="">
+          <p className="text-[#E08E5B] mt-10">Выберите капельницу </p>
+          <p className="text-4xl">Вывод из запоя на дому  </p>
+        </div>
+      </section>
+      {/* для мобилки  */}
       <section className="block lg:hidden">
         <div className="px-4 ">
 
@@ -386,7 +416,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* оживить все три кнопки  */}
+      {/* оживить все три кнопки | МОБИЛКА */}
       <section className="block lg:hidden">
         <div className="mt-10">
           <div className="flex justify-center ">
@@ -424,26 +454,30 @@ export default function App() {
             </form>
             <div >
               {/* сделать рабочую капчу  */}
+              <section className="block lg:hidden">
 
-
-
-
-              <div className="flex justify-center py-4">
-                <div className="w-[250px] h-30 bg-gray-200 rounded-2xl  ">
-                  <div className="flex justify-center mt-10">
-                    <input className="w-10 h-10 bg-white border" type="checkbox" />
-                    <p className="px-5  text-2xl">Я не робот </p>
+                <div className="flex justify-center py-4">
+                  <div className="w-[250px] h-30 bg-gray-200 rounded-2xl  ">
+                    <div className="flex justify-center mt-10">
+                      <input className="w-10 h-10 bg-white border" type="checkbox" />
+                      <p className="px-5  text-2xl">Я не робот </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div>
-                {/*   политика конфидециальность (я в шоке ) */}
-                <div className="py-3 flex ">
-                  <p className="text-xs">Нажимая кнопку , вы соглашаетесь с  </p>
-                  <p className="text-blue-600 text-xs line-clamp-2"> политикой конфидециальности</p>
-                </div>
+              </section>
 
-              </div>
+              <section>
+
+                <div>
+                  {/*   политика конфидециальность (я в шоке ) */}
+                  <div className="py-3 flex ">
+                    <p className="text-xs">Нажимая кнопку , вы соглашаетесь с  </p>
+                    <p className="text-blue-600 text-xs line-clamp-2"> политикой конфидециальности</p>
+                  </div>
+
+                </div>
+              </section>
+
               <div className="flex justify-center">
                 {/* рабочая кнопка с модалкой  */}
                 <button className="w-[350px]  h-13  rounded-2xl text-white bg-[#1cd581]">Получить консультацию </button>
@@ -452,56 +486,61 @@ export default function App() {
           </div>
         </div>
       </section>
-      <div className="block lg:hidden">
-        <div className="mt-3">
-          <div>
-            {/*картинка*/}
-            <img src="" alt="" />
-          </div>
-          <div className="w-25 border-blue-200 h-7 rounded-3xl bg-blue-100 ml-13" >
-            <p className="px-2 text-blue-800">Анонимно</p>
-          </div>
-          <div>
-            <p className="font-bold text-xl px-4">Подпишись на наш канал - <br /> здесь помогают делом , а не просто словами  </p>
-          </div>
-          <div className="w-[430px] py-5 px-4">
-            <p className="">Закрытый канал клиники: только проверенные методы лечения и <br /> честные ответы на вопросы.
-              Подписка абсолютно анонимна — никто не узнает, что вы ищете помощь.</p>
-          </div>
-          <div>
-            <div className="px-4">
-              <div className="flex ">
-                <span class="tg-cta__dot">✓</span>
-                <p className="px-3">Прямая связь с дежурными наркологами </p>
-              </div>
-              <div className="flex py-3 ">
-                <span class="tg-cta__dot">✓</span>
-                <p className="px-3">Пошаговый план действий при срывах  </p>
-              </div>
-              <div className="flex ">
-                <span class="tg-cta__dot">✓</span>
-                <p className="px-3">Анонимный чат поддержки  </p>
-              </div>
+      {/* Мобилка */}
+      <section className="block lg:hidden">
+        <div className="">
+          <div className="mt-3">
+            <div>
+              {/*картинка*/}
+              <img src="" alt="" />
             </div>
-            <p className="px-4 py-2">Ваша подписка конфидециальна. Мы не видим ваш номер телефона</p>
-            <div className="flex justify-center py-3">
-              <button className="flex  w-70 rounded-3xl bg-[#1cd581]">
-                <img className="w-7  ml-10" src="/Tg.svg" alt="" />
-                <p className="py-3 px-3 text-white"> Подписаться на канал</p>
-              </button>
+            <div className="w-25 border-blue-200 h-7 rounded-3xl bg-blue-100 ml-13" >
+              <p className="px-2 text-blue-800">Анонимно</p>
             </div>
-            <div className="text-center">
-              <p className="text-xs py-3"> Наш Telegram  - это скорая помощь в вашем телефоне </p>
+            <div>
+              <p className="font-bold text-xl px-4">Подпишись на наш канал - <br /> здесь помогают делом , а не просто словами  </p>
             </div>
+            <div className="w-[430px] py-5 px-4">
+              <p className="">Закрытый канал клиники: только проверенные методы лечения и <br /> честные ответы на вопросы.
+                Подписка абсолютно анонимна — никто не узнает, что вы ищете помощь.</p>
+            </div>
+            <section>
+              <div>
+                <div className="px-4">
+                  <div className="flex ">
+                    <span class="tg-cta__dot">✓</span>
+                    <p className="px-3">Прямая связь с дежурными наркологами </p>
+                  </div>
+                  <div className="flex py-3 ">
+                    <span class="tg-cta__dot">✓</span>
+                    <p className="px-3">Пошаговый план действий при срывах  </p>
+                  </div>
+                  <div className="flex ">
+                    <span class="tg-cta__dot">✓</span>
+                    <p className="px-3">Анонимный чат поддержки  </p>
+                  </div>
+                </div>
+                <p className="px-4 py-2">Ваша подписка конфидециальна. Мы не видим ваш номер телефона</p>
+                <div className="flex justify-center py-3">
+                  <button className="flex  w-70 rounded-3xl bg-[#1cd581]">
+                    <img className="w-7  ml-10" src="/Tg.svg" alt="" />
+                    <p className="py-3 px-3 text-white"> Подписаться на канал</p>
+                  </button>
+                </div>
+                <div className="text-center">
+                  <p className="text-xs py-3"> Наш Telegram  - это скорая помощь в вашем телефоне </p>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
-      </div>
 
+      </section>
 
 
       {/* сделать слайдер  */}
+      {/* хз наверное не надо | Мобилка */}
       <section className="block lg:hidden">
-
         <img alt="image-content" src="https://medeos-rostov.ru/netcat_files/multifile/474/1/preview_1.webp"></img>
         {/* ______________________ */}
         <img alt="image-content" src="https://medeos-rostov.ru/netcat_files/multifile/474/2/preview_1.webp"></img>

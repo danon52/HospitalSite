@@ -3,7 +3,7 @@ import React from 'react'
 export default function HeaderPC() {
     return (
         <div>
-            <header className=' '>
+            <header className=''>
                 <div className='flex justify-center' >
                     {/* <div>
                         <img src="https://medeos-rostov.ru/netcat_template/template/medplus/img/newgoodlogo.svg" alt="" />
