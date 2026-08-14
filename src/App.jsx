@@ -8,7 +8,7 @@ export default function App() {
       <div className="hidden lg:block h-20 sticky top-0 z-50 w-full bg-white">
         <HeaderPC />
       </div>
-      <div className="absolute">
+      <div className="absolute  ">
         <img className="block lg:hidden" src="/host.jpg" alt="" />
       </div>
       <div className="block relative h-130 flex flex-col justify-end py-6 px-4 lg:hidden ">
@@ -34,7 +34,7 @@ export default function App() {
 
 
 
-
+      {/* для пк  */}
       <section className="hidden lg:block">
         <div className="lg:relative mt-40 px-10">
           <div>
@@ -247,6 +247,183 @@ export default function App() {
 
 
       </section>
+
+      {/* для пк */}
+      <section className="hidden lg:block mt-10">
+        <div className="lg:grid grid-cols-3 gap-4">
+
+          <div className="lg:w-100 rounded-2xl h-auto bg-gray-100">
+            <div className="lg:p-5">
+              <img src="" alt="картинка " />
+            </div>
+            <div className="lg:text-center">
+              <p className="lg:text-3xl py-4">Палата 4 чел.</p>
+            </div>
+            <div>
+
+              <div>
+                <p>Мотивация на лечение пациента</p>
+              </div>
+              <div>
+                <p>Доставка пациента в стационар</p>
+              </div>
+              <div>
+                <p>Диагностика состояния пациента
+                </p>
+              </div>
+              <div>
+                <p>Очищающая капельница</p>
+              </div>
+              <div>
+                <p>Восстановление водного баланса
+                </p>
+              </div>
+              <div>
+                <p>Успокоительные</p>
+              </div>
+              <div>
+                <p>Противорвотные</p>
+              </div>
+              <div>
+                <p>Таблетированные препараты на 1 день (при необходимости)</p>
+              </div>
+              <div>
+                <p>Консультация нарколога, план дальнейшего лечения
+                </p>
+              </div>
+
+              <div>
+                <div>
+                  <p className="text-4xl">5500 ₽</p>
+                </div>
+                <div>
+                  <p className="lg:line-through text-xl text-gray-300"> 7000 ₽</p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:flex justify-center py-10">
+              <button className="w-60 h-15 text-xl rounded-xl bg-[#3B70F5] text-white">Оставь заявку </button>
+            </div>
+          </div>
+          <div className="lg:w-100 h-auto rounded-2xl bg-gray-100">
+            <div className="lg:p-4">
+              <img src="" alt="картинка " />
+            </div>
+            <div className="lg:text-center py-4">
+              <p className="lg:text-3xl">Палата 2 чел.</p>
+            </div>
+            <div>
+              <p>Мотивация на лечение пациента</p>
+            </div>
+            <div>
+              <p>Доставка пациента в стационар</p>
+            </div>
+            <div>
+              <p>Диагностика состояния пациента
+              </p>
+            </div>
+            <div>
+              <p>Очищающая капельница</p>
+            </div>
+            <div>
+              <p>Восстановление водного баланса
+              </p>
+            </div>
+            <div>
+              <p>Успокоительные</p>
+            </div>
+            <div>
+              <p>Противорвотные</p>
+            </div>
+            <div>
+              <p>Витамины, электролиты, сердечные (подбирается индивидуально)</p>
+            </div>
+            <div>
+              <p>Таблетированные препараты на 2 день (при необходимости)</p>
+            </div>
+            <div>
+              <p>Консультация нарколога, план дальнейшего лечения
+              </p>
+            </div>
+            <div>
+              <p>Мотивация на дальнейшее лечение</p>
+            </div>
+            <div>
+              <div>
+                <p className="lg:text-4xl">7000 ₽</p>
+              </div>
+              <div className="">
+                <p className="lg:line-through text-xl text-gray-300">
+                  9000 ₽
+                </p>
+              </div>
+            </div>
+            <div className="lg:flex justify-center py-10">
+              <button className="w-60 h-15 text-xl rounded-xl bg-[#3B70F5] text-white">Оставь заявку </button>
+            </div>
+          </div>
+          <div className="lg:w-100 rounded-3xl h-auto bg-gray-100">
+            <div className="p-3">
+              <img src="" alt="картинка" />
+            </div>
+            <div className="lg:text-center py-4">
+              <p className="lg:text-3xl ">VIP , 1 чел  </p>
+            </div>
+            <div>
+              <p>Мотивация на лечение пациента</p>
+            </div>
+            <div>
+              <p>Доставка пациента в стационар</p>
+            </div>
+            <div>
+              <p>Диагностика состояния пациента
+              </p>
+            </div>
+            <div>
+              <p>Очищающая капельница</p>
+            </div>
+            <div>
+              <p>Восстановление водного баланса
+              </p>
+            </div>
+            <div>
+              <p>Успокоительные</p>
+            </div>
+            <div>
+              <p>Противорвотные</p>
+            </div>
+            <div>
+              <p>Таблетированные препараты на 1 день (при необходимости)</p>
+            </div>
+            <div>
+              <p>Консультация нарколога, план дальнейшего лечения</p>
+            </div>
+            <div>
+              <p>
+                Настрой на здоровый образ жизни
+              </p>
+            </div>
+            <div>
+              <p>Послепроцедурная поддержка</p>
+            </div>
+            <div>
+              <div>
+                <p className="lg:text-4xl">9000 ₽</p>
+              </div>
+              <div className="">
+                <p className="line-through text-xl text-gray-400">
+                  15 000 ₽
+                </p>
+              </div>
+            </div>
+            <div className="lg:flex justify-center py-10">
+              <button className="w-60 h-15 text-xl rounded-xl bg-[#3B70F5] text-white">Оставь заявку </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* мобилка  */}
       <section className="block lg:hidden">
         <div>
           <p className="text-2xl text-[#222a2e]">
