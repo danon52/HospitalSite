@@ -114,10 +114,110 @@ export default function App() {
           </div>
         </div>
 
-        <div className="lg: flex justify-center">
-          <button className="lg:mt-10 rounded-2xl w-100 h-20 bg-[#1cd581] cursor-pointer  text-white">Узнать стоимость вашего случая </button>
+        <div className="lg: my-10 flex justify-center">
+          <button className="lg:rounded-2xl w-100 h-20 bg-[#1cd581] cursor-pointer  text-white">Узнать стоимость вашего случая </button>
         </div>
       </section>
+
+      <section className="hidden lg:block">
+        <div className=" lg:grid grid-cols-3 gap-5">
+          <div className="lg:px-5 py-5 bg-[#EAF0FE] border-[#C7D7FC]  rounded-3xl ">
+            <p className="lg:text-2xl">Базовая капельница</p>
+            <div>
+              <p className="lg:text-[#5F7178] text-xs">Быстрое очищение</p>
+            </div>
+            <div className="lg:mt-5  flex items-center gap-2">
+              <div className="lg:w-2 h-2 rounded-full bg-[#f0892e]"></div>
+              <span> Водный баланс </span>
+            </div>
+            <div className="lg:py-6 flex items-center gap-2">
+              <div className="lg:w-2 h-2 rounded-full bg-[#f0892e]"></div>
+              <span> Успокительные + противорвотные </span>
+            </div>
+            <div className="lg:flex items-center gap-2 w-auto">
+              <div className="lg:w-2 h-2 rounded-full bg-[#f0892e] flex"></div>
+              <span className="lg:">Консультация нарколога  </span>
+            </div>
+
+            <div className="lg:mt-6 flex items-center gap-2">
+              <div className="lg:w-2 h-2 rounded-full  bg-[#f0892e]"></div>
+              <span>Очищяющая капельница</span>
+            </div>
+            <div className="lg:flex justify-center py-3">
+              <button className="lg: cursor-pointer rounded-3xl w-75 h-12 bg-[#3B70F5]"> Вызвать бригаду</button>
+            </div>
+          </div>
+
+
+          {/* Выделить другим цветом (сделать акцент) */}
+          <div className="lg:px-4 py-5 bg-[#EAF0FE]  rounded-3xl ">
+            <div className="lg:flex">
+              <p className="lg:text-2xl">Стандартная </p>
+              <div>
+                <img className="lg: w-5  py-[8px] ml-2" src="/Star1.svg" alt="" />
+              </div>
+            </div>
+            <div>
+              <p className="lg:text-[#5F7178] text-xs">Полное восстановление </p>
+            </div>
+            <div className="lg:mt-5  flex items-center gap-2">
+              <div className="lg:w-2 h-2 rounded-full bg-[#f0892e]"></div>
+              <span> Все из базовой </span>
+            </div>
+            <div className="lg:py-6 flex items-center gap-2">
+              <div className="lg:w-2 h-2 rounded-full bg-[#f0892e]"></div>
+              <span> Витамины , электролиты </span>
+            </div>
+            <div className="lg:flex items-center gap-2 w-auto">
+              <div className="lg:w-2 h-2 rounded-full bg-[#f0892e] flex"></div>
+              <span className="lg:">Таблетки на 2 дня   </span>
+            </div>
+            <div className="lg:mt-6 flex items-center gap-2">
+              <div className="lg:w-2 h-2 rounded-full  bg-[#f0892e]"></div>
+              <span>Мотивация на лечение </span>
+            </div>
+            {/*   так же поменять цвет под основной  */}
+            <div className="lg:flex justify-center py-3">
+              <button className="lg:cursor-pointer rounded-3xl w-75 h-12 bg-[#3B70F5]"> Вызвать бригаду</button>
+            </div>
+          </div>
+          <div className="lg:px-4 py-5 bg-[#EAF0FE] rounded-3xl">
+            <p className="lg:text-2xl">VIP-терапия</p>
+            <div>
+              <p className="lg:text-[#5F7178] text-xs">Максимальный уход  </p>
+            </div>
+            <div className="lg:mt-5  flex items-center gap-2">
+              <div className="lg:w-2 h-2 rounded-full bg-[#f0892e]"></div>
+              <span> Все из стандартной </span>
+            </div>
+            <div className="lg:mt-5  flex items-center gap-2">
+              <div className="lg:w-2 h-2 rounded-full bg-[#f0892e]"></div>
+              <span> Ноотропные + гепатопротекторы  </span>
+            </div>
+            <div className="lg:py-6 flex items-center gap-2">
+              <div className="lg:w-2 h-2 rounded-full bg-[#f0892e]"></div>
+              <span> Таблетки на 3 дня  </span>
+            </div>
+            <div className="lg:flex items-center gap-2 w-auto">
+              <div className="lg:w-2 h-2 rounded-full bg-[#f0892e] flex"></div>
+              <span className="lg:">Мотивация на лечение   </span>
+            </div>
+            <div className="lg:flex justify-center py-3">
+              <button className="lg:cursor-pointer rounded-3xl w-75 h-12 bg-[#3B70F5]"> Вызвать бригаду</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="hidden lg:block">
+        <div>
+
+        </div>
+
+
+      </section>
+
       <section className="block lg:hidden">
         <div>
           <p className="text-2xl text-[#222a2e]">
