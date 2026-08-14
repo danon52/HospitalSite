@@ -89,32 +89,35 @@ export default function App() {
 
         <div className="lg: grid grid-cols-4 gap-4 ">
           <div className="lg:w-70 h-40 rounded-2xl bg-[#D7EFFF]">
-            <p className="lg:  px-2 py-3">Помощь 24/7 </p>
+            <p className="lg:  px-2 py-3 text-xl">Помощь 24/7 </p>
             <div>
               <p className="lg: px-2">Приедем за 30 мин, облегчение через 15 мин после капельницы</p>
             </div>
           </div>
           <div className="lg:w-70 h-40 rounded-2xl bg-[#D7EFFF]">
-            <p className=" lg: px-2  py-3">Помощь 24/7</p>
+            <p className=" lg: px-2  py-3 text-xl">Анонимнсть</p>
             <div>
-              <p className="lg: px-2">Приедем за 30 мин, облегчение через 15 мин после капельницы</p>
+              <p className="lg: px-2"> Врачи в штатском , без учета , машина не привлечет внимания </p>
             </div>
           </div>
           <div className="lg:w-70 h-40  rounded-2xl bg-[#D7EFFF]">
-            <p className="lg: px-2 py-3">Помощь 24/7</p>
+            <p className="lg: px-2 py-3 text-xl">Эффективность</p>
             <div>
-              <p className="lg: px-2">Приедем за 30 мин, облегчение через 15 мин после капельницы</p>
+              <p className="lg: px-2"> Современные препараты и полное очищение </p>
             </div>
           </div>
           <div className="lg:w-70 h-40 rounded-2xl bg-[#D7EFFF]">
-            <p className="lg: px-2 py-3">Помощь 24/7 </p>
+            <p className="lg: px-2 py-3 text-xl">Честны подход </p>
             <div>
-              <p className="lg: px-2">Приедем за 30 мин, облегчение через 15 мин после капельницы</p>
+              <p className="lg: px-2">Официальный договор и чеки на все препараты </p>
             </div>
           </div>
         </div>
-      </section>
 
+        <div className="lg: flex justify-center">
+          <button className="lg:mt-10 rounded-2xl w-100 h-20 bg-[#1cd581] cursor-pointer  text-white">Узнать стоимость вашего случая </button>
+        </div>
+      </section>
       <section className="block lg:hidden">
         <div>
           <p className="text-2xl text-[#222a2e]">
@@ -122,10 +125,7 @@ export default function App() {
           </p>
           <p className="text-xl  ">Анонимная помощь на дому и на стационаре </p>
         </div>
-
       </section>
-
-
       <section className="block lg:hidden">
         <div className="w-100 mt-5 bg-gray-200 rounded-2xl ml-5 " >
           <div>
